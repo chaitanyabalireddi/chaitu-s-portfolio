@@ -1,0 +1,213 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.navbar{
+    display: flex;
+    gap: 35px;
+    background-color: whitesmoke;
+    align-items: center;
+}
+.navbar li {
+    position: relative;
+    left: 55%;
+}
+.navbar p{
+    position: relative;
+    left: 15px;
+    color: black;
+    font-size: large;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar a{
+    color: black;
+    font-size: large;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a:hover{
+    color: black;
+    text-decoration: underline;
+    
+}
+a::before{
+    content: "";
+    height: 5px;
+    width: 15px;
+    color: black;
+}
+.navbar li::marker{
+    content: "";
+}
+
+.heading {
+    font-size: 8vw;
+    font-weight: 900;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading h1{
+   position: relative;
+   left: 250px;
+}
+.heading img{
+    position:relative;
+    right: 550px;
+    filter: grayscale(50%);
+    opacity: 0.5;
+}
+.heading img:hover{
+    filter:grayscale(25%);
+    opacity: 1;
+    filter: saturate(35%);
+   transform: scale(120%);
+   transition: 0.5s ease-in-out 0s;
+}
+.content{
+    width: 700px;
+    position: relative;
+    bottom: 250px;
+    left: 405px;
+}
+.content h1{
+    font-size: 5vw;
+}
+.content p{
+    position: relative;
+    bottom: 50px;
+    left: 5px;
+    font-size: 18px;
+    font-weight: 520;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.projects{
+    height: 100vh;
+    width: 100%;
+}
+.sich img{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+}
+.rotate img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    animation-name: rotateani;
+    animation-duration: 0.5s;
+    animation-timeline: view();
+}
+@keyframes rotateani{
+    from{transform: rotate(360deg);}
+    to{transform: rotate(0deg);}
+}
+.maincontent h1{
+    position: relative;
+    left: 5%;
+    top: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 8vw;
+    animation-name: autoblurani;
+    animation-timeline: view() ;
+}
+#head2{
+    position: relative;
+    left: 35%;
+}
+#head3{
+    position: relative;
+    left: 50%;
+}
+@keyframes autoblurani{
+    0%{
+        filter: blur(40px);
+    }
+    45%, 55%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(40px);
+    }
+}
+.content2{
+    display: flex;
+    animation-name: content2ani;
+    animation-timeline: view();
+}
+@keyframes content2ani{
+    0%{opacity: 0;}
+    45%,55%{opacity: 1;}
+    100%{opacity: 0.5;}
+}
+.content2 img{
+    position: relative;
+    right: 0%;
+    height: 550px;
+    width: 400px;
+}
+.content2 p{
+    position: relative;
+   font-size: 20px;
+   font-weight: 600;
+   font-family: monospace;
+   top: 250px;
+}
+.projectslist{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+    animation-name: boxani;
+    animation-timeline: view();
+}
+@keyframes boxani{
+    0%{transform: scale(60%); opacity: 0;}
+    45%,55%{transform: scale(100%); opacity: 1;}
+    100%{transform: scale(60%);opacity: 0.5;}
+}
+.projhead{
+  display: flex;
+  justify-content: center;
+    font-size: 4vw;
+    font-family: 'Times New Roman', Times, serif;
+    animation-name: textani;
+    animation-timeline: view();
+}
+@keyframes textani{
+    0%{transform: scale(60%); opacity: 0;}
+    45%,55%{transform: scale(100%); opacity: 1;}
+    100%{transform: scale(100%);opacity: 0.5;}
+}
+
+.box1{
+    border: 2px solid black;
+    width: 200px;
+    height: 350px;
+    background-color: whitesmoke;
+    font-size: 17px;
+    font-family: monospace;
+    padding-left: 5px;
+}
+.box{
+    border: 2px solid white;
+    width: 200px;
+    height: 350px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-family:monospace;
+    padding-left: 20px;
+}
